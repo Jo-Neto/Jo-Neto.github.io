@@ -1,0 +1,746 @@
+<!doctype html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <style>
+        /*
+border: dotted blue 5px;
+*/
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: hsl(0, 0%, 96%);
+        }
+
+/*=======CLASSES-----------CLASSES------------CLASSES--------*/
+        .general_header {
+            display: flex;
+            font-family: 'spinnaker', sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            color: rgb(53, 84, 143);
+            letter-spacing: 6px;
+            margin-top: 0px;
+            padding-bottom: 32px;
+            border-bottom: solid 0.5px hsl(219, 72%, 63%);
+            justify-content: center;
+            min-width: max-content;
+        }
+
+/*=====================fixed--------------------------------*/
+        #head {
+            display: flex;
+            height: 110px;
+            width: 100%;
+            position: fixed;
+            margin-top: -110px;
+            min-width: max-content;
+            background: linear-gradient(180deg, rgb(241, 244, 246) 0%, #ffffff 12.15%);
+        }
+
+        #head_authorname {
+            display: flex;
+            padding-left: 250px;
+            align-items: center;
+            font-family: 'palatino linotype', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: rgb(61, 61, 61);
+            min-width: max-content;
+        }
+
+        #head_elem_box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 150px;
+            width: 100%;
+            min-width: max-content;
+        }
+
+        .head_elements {
+            font-family: 'spinnaker', serif;
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(110, 110, 110);
+            min-width: max-content;
+        }
+
+        #head_symbol {
+            background-image: url(head_logo.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 45px;
+            height: 45px;
+            padding-right: 210px;
+        }
+
+/*=====================main_header--------------------------------*/
+        #main_header {
+            background-image: url(img_sec=main_header.webp);
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 1200px;
+            object-fit: cover;
+            margin-top: 110px;
+        }
+
+        #header_desc {
+            font-size: 16px;
+            font-family: 'spinnaker', sans-serif;
+            letter-spacing: 5.8px;
+            font-weight: 400;
+            color: rgb(255, 255, 255);
+            margin-left: 485px;
+            margin-top: 90px;
+            min-width: max-content;
+        }
+
+        h1 {
+            color: white;
+            font-size: 90px;
+            font-family: 'palatino linotype';
+            font-weight: 700;
+            margin-left: 400px;
+            margin-top: 5px;
+            min-width: max-content;
+        }
+
+        #header_buy {
+            font-family: 'spinnaker', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            text-underline-offset: 11px;
+            color: rgb(68, 96, 148);
+            letter-spacing: 2.6px;
+            margin-left: 665px;
+            margin-top: -75px;
+            min-width: max-content;
+        }
+
+/*=====================main_books--------------------------------*/    
+        #main_books {
+            background-color: hsl(0, 0%, 96%);
+        }
+
+        #main_books_head {
+            letter-spacing: 7.4px;
+            margin: -65px 230px 0px;
+        }
+
+        #main_books_pic_box {
+            display: flex;
+            margin-left: 225px;
+            margin-right: 225px;
+            justify-content: space-around;
+            min-width: max-content;
+        }
+
+        .main_books_pic_class {
+            display: flex;
+            margin-top: 80px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 550px;
+            min-width: 270px;
+            max-width: 270px;
+        }
+
+        #main_books_pic_1 {
+            background-image: url(book_1.webp);
+        }
+
+        #main_books_pic_2 {
+            background-image: url(book_2.webp);
+        }
+
+        #main_books_pic_3 {
+            background-image: url(book_3.webp);
+        }
+
+        .main_books_under_box {
+            display: flex;
+            padding-right: 15px ;
+            margin: 14px 210px;
+            justify-content: space-around;
+            min-width: max-content;
+        }
+
+        .main_books_name_class {
+            margin-top: -153px;
+            margin-bottom: 120px;
+            display: flex;
+            font-family: 'palatino linotype', serif;
+            font-size: 20px;
+            font-weight: 200;
+            color: rgb(50, 50, 50);
+            border-bottom: solid 1px hsl(219, 73%, 61%);
+            padding: 0px 40px 5px;
+            min-width: max-content;
+        }
+
+        .main_books_price_class {
+            margin-top: -127px;
+            font-family: 'palatino linotype', serif;
+            font-size: 19px;
+            font-weight: 200;
+            color: rgb(50, 50, 50);
+            min-width: max-content;
+        }
+
+/*=====================main_feedback--------------------------------*/ 
+        #main_feedback {
+            background-color: hsl(219, 46%, 38%);
+            margin-top: -28px;
+        }
+
+        #main_feedback_head {
+            margin: 0px 260px 0px;
+            padding-top: 100px;
+            font-size: 30px;
+            letter-spacing: 7.5px;
+            color: white;
+            border-bottom: solid 1px white;
+        }
+
+        #main_feedback_symbol_box {
+            margin-left: 250px;
+            margin-right: 250px;
+            margin-top: 26px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .main_feedback_symbol {
+            background-image: url(comma.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 100px;
+            width: 100px;
+        }
+
+        .main_feedback_depo_box {
+            margin-left: 250px;
+            margin-right: 250px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main_feedback_depo, .main_feedback_name_class{
+            margin-left: 20px;
+            margin-right: 20px;
+            font-family: 'palatino linotype', serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: white;
+            line-height: 24px;
+            letter-spacing: 2.4px;
+            text-align: center;
+        }
+
+        .main_feedback_underscore_class {
+            margin-left: 110px;
+            margin-right: 110px;
+            display: flex;
+            border-bottom: white 1px solid;
+            height: 44px;
+            width: 80px;
+        }
+
+        .main_feedback_name_box {
+            margin-top: 36px;
+            margin-left: 270px;
+            margin-right: 270px;
+            padding-bottom: 130px;
+            display: flex;
+            justify-content: space-between;
+            min-width: max-content;
+        }
+        
+        .feedback_span {
+            font-family: 'palatino linotype', serif;
+            font-size: 17px;
+            font-weight: 700;
+            color: white;
+            line-height: 27.2px;
+            letter-spacing: 1.7px;
+            min-width: max-content;
+        }
+
+        .main_feedback_name_class {
+            font-family: 'palatino linotype', serif;
+            font-size: 17px;
+            font-weight: 400;
+            color: white;
+            line-height: 27.2px;
+            letter-spacing: 1.7px;
+            min-width: max-content;
+        }
+
+/*=====================main_author--------------------------------*/
+        #main_author_head {
+            padding-top: 78px;
+            min-width: max-content;
+            margin-left: 260px;
+            margin-right: 260px;
+        }
+
+        #main_author_box {
+            display: flex;
+            margin-left: 260px;
+            margin-right: 220px;
+            justify-content: space-between;
+        }
+
+        #main_author_box_pic {
+            margin-top: 75px;
+            background-image: url(author_pic.webp);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 600px;
+            height: 280px;
+            min-width: max-content;
+        }
+
+        .main_author_box_div {
+            margin-top: 75px;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 360px;
+            font-family: 'palatino linotype', serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(61, 61, 61);
+            line-height: 25.6px;
+            letter-spacing: 0.8px;
+        }
+
+/*=====================main_events--------------------------------*/
+        #main_events {
+            display: flex;
+            flex-direction: column;
+            margin-top: 130px;
+            margin-bottom: 30px;
+            padding-bottom: 70px;
+            background-color: rgb(28, 45, 76);
+            justify-content: center;
+        }
+
+        #main_events_head {
+            padding-top: 140px;
+            padding-bottom: 100px;
+            display: flex;
+            font-family: 'spinnaker', sans-serif;
+            font-size: 30px;
+            font-weight: 400px;
+            line-height: 45px;
+            letter-spacing: 1px;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main_events_item {
+            display: flex;
+            align-items: center;
+            height: 140px;
+            width: 920px;
+            margin-left: 245px;
+        }
+
+        .main_events_day {
+            color: white;
+            font-family: 'palatino linotype', serif;
+            font-size: 40px;
+        }
+
+        .main_events_date {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            padding-left: 10px;
+            justify-items: space-between;     
+        }
+
+            .main_events_date_top {
+                color: rgb(133, 143, 159);
+                font-family: 'palatino linotype', serif;
+            }
+
+            .main_events_date_bot {
+                color: white;
+                font-family: 'palatino linotype', serif;
+            }
+        
+        .main_events_date_place {
+            color: white;
+            padding-left: 35px;
+            font-family: 'Times New Roman';
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        .events_button {
+            display: flex;
+            margin-left: auto;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 43px;
+            width: 145px;
+            background-color: rgb(83, 134, 228);
+        }
+
+        .place_small {
+            font-size: 18px;
+        }
+
+        #middle_item_1, #middle_item_2 {
+            border-top: solid 1px rgb(57, 72, 99);
+            border-bottom: solid 1px rgb(57, 72, 99);
+        }
+/*
+main_events
+    main_events_head
+    main_events_item
+        main_events_day
+        main_events_date
+            main_events_date_top
+            main_events_date_bot
+        main_events_date_place
+            place_small
+        events_button
+*/
+
+
+/*=====================main_contact--------------------------------*/
+        #main_contact {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+        }
+
+        #contact_head {
+            width: 920px;
+            margin-left: 250px;
+            margin-right: 250px;
+            padding-top: 70px;
+            padding-bottom: 40px;
+            letter-spacing: 10px;
+        }
+
+        #contact_media {
+            padding-top: 55px;
+            font-family: 'palatino linotype', serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(61, 61, 61);
+            letter-spacing: 1.48px;
+        }
+
+        #contact_info {
+            padding-top: 15px;
+            font-family: 'palatino linotype', serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(61, 61, 61);
+            letter-spacing: 1.8px;
+        }
+
+        #contact_friend {
+            padding-top: 50px;
+            font-family: 'palatino linotype', serif;
+            font-size: 17px;
+            font-weight: 400;
+            color: rgb(61, 61, 61);
+        }
+
+        #email_button {
+            display: flex;
+            justify-items: space-between;
+            align-items: center;
+        }
+        
+        #contact_email {
+            display: flex;
+            margin-left: 10px;
+            padding-left: 20px;
+            font-family: arial;
+            font-size: 17px;
+            font-weight: 400;
+            color: rgb(61, 61, 61);
+            border: solid 3px red;
+            height: 35px;
+            width: 275px;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        #contact_button {
+            display: flex;
+            margin-left: 10px;
+            padding-left: 10px;
+            font-family: arial;
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(61, 61, 61);
+            letter-spacing: 1.48px;
+            border: solid 1px rgb(141, 141, 141);
+            justify-items: center;
+            align-items: center;
+            height: 38px;
+            width: 90px;
+        }
+        
+        #contact_foot {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 65px;
+            font-family: 'palatino linotype', serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(61, 61, 61);
+            width: 660px;
+        }
+        
+        #contact_link {
+            display: flex;
+            padding-top: 65px;
+            font-family: 'palatino linotype', serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(61, 61, 61);
+            align-items: center;
+            justify-content: space-between;
+            width: 170px;
+        }
+
+
+
+
+/*=====================footer--------------------------------*/
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            padding-bottom: 50px;
+            padding-top: 28px;
+        }
+
+        p {
+            font-family: 'palatino linotype', serif;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.7px;
+            text-align: center;
+            color:rgb(70, 70, 70);
+            line-height: 20px;
+        }
+
+/*
+border: dotted blue 5px;
+*/
+    </style>
+</head>
+
+<body>
+    <section id="fixed">
+        <div id="head">
+            <div id="head_authorname">
+                J. Brown
+            </div>
+            <div id="head_elem_box">
+                <div class="head_elements">Página Inicial</div>
+                <div class="head_elements">Livros</div>
+                <div class="head_elements">Na Mídia</div>
+                <div class="head_elements">Sobre</div>
+                <div class="head_elements">Notícias e Eventos</div>
+                <div class="head_elements">Contato</div>
+                <div id="head_symbol"></div>
+            </div>
+        </div>
+    </section>
+    <section id="main_header">
+        <div id="header_desc">
+            O LIVRO PREMIADO DE JOEL BROWN
+        </div>
+        <h1>
+            Um Conto Real
+        </h1>
+        <div id="header_buy">
+            <div><u>COMPRAR</u></div>
+        </div>
+    </section>
+    <section id="main_books">
+        <div id="main_books_head" class="general_header">
+            MAIS LIVROS DE JOEL‏ BROWN
+        </div>
+        <div id="main_books_pic_box">
+            <div class="main_books_pic_class" id="main_books_pic_1"></div>
+            <div class="main_books_pic_class" id="main_books_pic_2"></div>
+            <div class="main_books_pic_class" id="main_books_pic_3"></div>
+        </div>
+        <div class="main_books_under_box">
+            <div id="book1_fix" class="main_books_name_class">A VISÃO DE DIANNA</div>
+            <div class="main_books_name_class">CONTAGEM FINAL</div>
+            <div class="main_books_name_class">ALÉM DA NEBLINA</div>
+        </div>
+        <div class="main_books_under_box">
+            <div class="main_books_price_class"><i> R$ 55,00</i></div>
+            <div class="main_books_price_class"><i> R$ 60,00</i></div>
+            <div class="main_books_price_class"><i> R$ 50,00</i></div>
+        </div>
+    </section>
+    <section id="main_feedback">
+        <div id="main_feedback_head" class="general_header">
+            NA MÍDIA
+        </div>
+        <div id="main_feedback_symbol_box">
+            <div class="main_feedback_symbol"></div>
+            <div class="main_feedback_symbol"></div>
+            <div class="main_feedback_symbol"></div>
+        </div>
+        <div class="main_feedback_depo_box">
+            <div class="main_feedback_depo">Sou um depoimento. Clique aqui para editar e adicionar um texto sobre você e
+                seus serviços. Permita que seus clientes o avaliem e digam aos amigos o quanto você é bom.</div>
+            <div class="main_feedback_depo">Sou um depoimento. Clique aqui para editar e adicionar um texto sobre você e
+                seus serviços. Permita que seus clientes o avaliem e digam aos amigos o quanto você é bom.</div>
+            <div class="main_feedback_depo">Sou um depoimento. Clique aqui para editar e adicionar um texto sobre você e
+                seus serviços. Permita que seus clientes o avaliem e digam aos amigos o quanto você é bom.</div>
+        </div>
+        <div class="main_feedback_depo_box">
+            <div class="main_feedback_underscore_class"></div>
+            <div class="main_feedback_underscore_class"></div>
+            <div class="main_feedback_underscore_class"></div>
+        </div>
+        <div class="main_feedback_name_box">
+            <div class="main_feedback_name_class"><span class="feedback_span">GABRIEL CARDOSO,</span><br />DIÁRIO DE CAMPINAS</div>
+            <div class="main_feedback_name_class"><span class="feedback_span">AMANDA RIBEIRO,</span><br />FOLHA CARIOCA</div>
+            <div class="main_feedback_name_class"><span class="feedback_span">ALICE MENDES,</span><br />ACADEMIA DO LIVRO</div>
+        </div>
+    </section>
+    <section id="main_author">
+        <div id="main_author_head" class="general_header">
+            BIOGRAFIA
+        </div>
+        <div id="main_author_box">
+            <div id="main_author_box_pic"></div>
+            <div class="main_author_box_div">Sou um parágrafo. Clique aqui para editar e adicionar o seu próprio texto. É
+                fácil! Basta clicar em "Editar Texto" ou clicar duas vezes sobre mim e você poderá adicionar o seu
+                próprio conteúdo e trocar fontes. Sinta-se à vontade para arrastar e soltar em qualquer lugar em sua
+                página.</div>
+            <div class="main_author_box_div">Permita que seus clientes saibam mais sobre você. Este é um ótimo espaço para
+                escrever um texto longo sobre a sua empresa e seus serviços. Fale sobre a sua equipe e conte aos seus
+                visitantes sobre como teve a idéia de iniciar o seu negócio e mais sobre sua história.</div>
+        </div>
+    </section>
+    <section id="main_events">
+        <div id="main_events_head">
+            Próximos Eventos
+        </div>
+        <div class="main_events_item">
+            <div class="main_events_day">
+                05
+            </div>
+            <div class="main_events_date">
+                <div class="main_events_date_top">qui.</div>
+                <div class="main_events_date_bot">jan.</div>
+            </div>
+            <div class="main_events_date_place">
+                Autógrafos do Livro / <span class="place_small">São Paulo</span>
+            </div>
+            <div class="events_button">
+                COMPARECER
+            </div>
+        </div>
+        <div class="main_events_item" id="middle_item_1">
+            <div class="main_events_day">
+                09
+            </div>
+            <div class="main_events_date">
+                <div class="main_events_date_top">seg.</div>
+                <div class="main_events_date_bot">jan.</div>
+            </div>
+            <div class="main_events_date_place">
+                Autógrafos do Livro / <span class="place_small">Porto Alegre</span>
+            </div>
+            <div class="events_button">
+                COMPARECER
+            </div>
+        </div>
+        <div class="main_events_item" id="middle_item_2">
+            <div class="main_events_day">
+                16
+            </div>
+            <div class="main_events_date">
+                <div class="main_events_date_top">seg.</div>
+                <div class="main_events_date_bot">jan.</div>
+            </div>
+            <div class="main_events_date_place">
+                Autógrafos do Livro / <span class="place_small">Fortaleza</span>
+            </div>
+            <div class="events_button">
+                COMPARECER
+            </div>
+        </div>
+        <div class="main_events_item">
+            <div class="main_events_day">
+                18
+            </div>
+            <div class="main_events_date">
+                <div class="main_events_date_top">qui.</div>
+                <div class="main_events_date_bot">jan.</div>
+            </div>
+            <div class="main_events_date_place">
+                Autógrafos do Livro / <span class="place_small">Natal</span>
+            </div>
+            <div class="events_button">
+                COMPARECER
+            </div>
+        </div>
+    </section>
+    <section id="main_contact">
+        <div class="general_header" id="contact_head">
+            CONTATO
+        </div>
+        <div id="contact_media">
+            Para questões de mídia, entre em contato com o agente Daniel Melo:
+        </div>
+        <div id="contact_info">
+            Tel: (11) 3456-7890 | Fax: (11) 3456-7890 | info@meusite.com
+        </div>
+        <div id="contact_friend">
+            Assine para receber notícias, eventos e muito mais!
+        </div>
+        <div id="email_button">   
+            <div id="contact_email">
+                Insira o seu email aqui*
+            </div>
+            <div id="contact_button">
+                Participar
+            </div>
+        </div> 
+        <div id="contact_foot">
+            <u>FAQ</u><u>Envio e devoluções </u><u>Termos e políticas</u><u>Formas de pagamento</u>
+        </div>
+        <div id="contact_link">
+            Siga-me: <img src="foot_logo_1.webp"><img src="foot_logo_2.webp"><img src="foot_logo_3.webp">
+        </div>
+    </section>
+    <footer>
+            <p>© 2023 por Joel Brown. Orgulhosamente criado com Wix.com</br>
+                Joel Brown Ltda. - CPF/CNPJ: 12.345.678/0000-01 - Av. Bernardino de Campos, 98 São Paulo, SP 12345-678</br>
+                info@meusite.com - Telefone: (11) 3456-7890</p>
+    </footer>
+</body>
+
+</html>
