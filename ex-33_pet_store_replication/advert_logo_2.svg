@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 165" width="190" height="165">
+	<title>image</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #8fd3e8;stroke-width: 3 } 
+	</style>
+	<path id="Forma 1" class="shp0" d="M76 40L76 50L73 54L62 56L59 51L59 41L63 33L69 27L76 40Z" />
+	<path id="Forma 2" class="shp0" d="M108 52L108 44L112 34L118 28L124 36L126 47L123 56L117 56L108 52Z" />
+	<path id="Forma 3" class="shp0" d="M128 60L129 56L135 46L141 40L147 46L148 58L147 65L140 71L128 60Z" />
+	<path id="Forma 4" class="shp0" d="M34 56L35 49L37 42L42 36L45 36L51 44L54 53L54 58L44 66L39 66L34 56Z" />
+	<path id="Forma 5" class="shp0" d="M89 72L94 66L102 61L112 61L121 65L127 70L129 76L129 84L126 94L122 103L116 109L109 116L101 123L89 130L75 122L64 112L54 99L49 87L49 75L55 66L67 61L78 61L85 66L89 72Z" />
+</svg>

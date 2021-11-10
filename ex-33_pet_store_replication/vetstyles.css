@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'chelsea';
+    src: url(chelsea.woff2);
+}
+
+body {
+    margin: 0px;
+}
+
+p {
+    color: rgb(73, 73, 73);
+}
+
+/*==================================FIXED TAB===========================*/
+section:nth-of-type(1){
+    position: fixed;
+    display: flex;
+    right: 1px;
+    bottom: 1px;
+    top: 1px;
+    flex-direction: column;
+    margin-right: 20px;
+    background-color: transparent;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+section:nth-of-type(1)>div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    height: 105px;
+    margin-top: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 55px;
+    width: 290px;
+    background-color: rgb(197, 232, 244);
+    border-radius: 10px;
+    font-family: 'chelsea', fantasy;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(72, 106, 116);
+}
+
+/*==================================HEAD TAB===========================*/
+section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    height: 75px;
+    width: 70px;
+}
+
+h1 {
+    font-family: 'chelsea', fantasy;
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(143, 211, 232);
+    padding: 0px;
+    margin: 0px;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(143, 211, 232);
+    margin-top: -5px;
+    letter-spacing: 2.5px;
+}
+
+#head_tab {
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: row;
+    color: rgb(100, 100, 100);
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+section:nth-of-type(2)>div>p {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(76, 76, 76);
+    width: 13%;
+    text-align: center;
+}
+
+
+/*==================================DOOGGOO===========================*/
+section:nth-of-type(3) {
+    display: flex;
+    background-color: rgb(238, 179, 181); 
+}
+
+section:nth-of-type(3)>img {
+    margin-left: -15px;
+    padding-bottom: -5px;
+    height: 659px;
+    width: 467px;
+    background-color: rgb(238, 179, 181);
+}
+
+section:nth-of-type(3)>div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    align-content: center;
+}
+
+section:nth-of-type(3)>div>p:nth-of-type(1) {
+    display: block;
+    position: absolute;
+    left: 29%;
+    top: 42%;
+    width: 40%;
+    font-family: 'chelsea', fantasy;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    text-justify: distribute;
+}
+
+section:nth-of-type(3)>div>p:nth-of-type(2) {
+    display: block;
+    position: absolute;
+    left: 36%;
+    top: 78%;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+/*==================================ADVERT===========================*/
+section:nth-of-type(4)  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section:nth-of-type(4)>div>div>div>img  {
+    padding-top: 30px;
+    width: 115px;
+    height: 115px;
+}
+
+section:nth-of-type(4)>p:nth-of-type(1)  {
+    padding-top: 75px;
+    font-family: 'chelsea', fantasy;
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(143, 211, 232);
+}
+
+section:nth-of-type(4)>p:nth-of-type(2)  {
+    margin-top: -25px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(132, 131, 131);
+}
+
+section:nth-of-type(4)>div  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+section:nth-of-type(4)>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-items: space-around;
+    align-items: center;
+}
+
+section:nth-of-type(4)>div>div>div:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+h4 {
+    font-family: 'chelsea', fantasy;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(143, 211, 232);
+    margin-top: 0px;
+}
+
+section:nth-of-type(4)>div>div>p {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    width: 80%;
+    color: rgb(122, 121, 121);
+    margin-top: -15px;
+    line-height: 22.5px;
+    text-align: center;
+    text-justify: distribute;
+}
+
+section:nth-of-type(4)>div>div>div:nth-last-of-type(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(143, 211, 232);
+    margin-top: 10px;
+    margin-bottom: 175px;
+    height: 35px;
+    width: 140px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+section:nth-of-type(5)>img {
+    width: 100%;
+}
+
+/*==================================FOOTER===========================*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+    padding: 40px 18.5% 60px;
+    background-color: rgb(143, 211, 232);
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    color: white;
+}
+
+footer>div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+footer>div:nth-of-type(1)>div {
+    display: flex;
+    filter: invert(1);
+}
+
+footer>div:nth-of-type(1)>div>img {
+    height: 27px;
+    width: 27px;
+    padding-right: 6px;
+}
+
+footer>div:nth-last-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+footer>div>p, footer>div>a, footer>div>address{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+    text-align: end;
+}
+
+
+
+/*
+border: solid 1px red;
+*/
