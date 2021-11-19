@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(rgb(192, 224, 232));
+}
+
+* {
+    color: rgb(2, 24, 29);
+    text-align: center;
+}
+
+h2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+}
+
+img {
+    height: 160px;
+    width: 160px;
+    margin: 50px;
+}
