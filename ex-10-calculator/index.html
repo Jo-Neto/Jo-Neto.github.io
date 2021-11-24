@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="calc.css">
+    <script defer src="calc.js"></script>
+</head>
+
+<body>
+    <div id="whole">
+        <div id="screen">
+        </div>
+        <div id="inpField">
+            <input type="number" id="inp1" class="inpShow"></input>
+            <input type="number" id="inp2" class="inpShow"></input>
+        </div>
+        <div id="btnField">
+            <button class="inpBtn" onclick="makeCalc(0)">+</button>
+            <button class="inpBtn" onclick="makeCalc(1)">-</button>
+            <button class="inpBtn" onclick="makeCalc(2)">x</button>
+            <button class="inpBtn" onclick="makeCalc(3)">÷</button>
+            <div class="inpStyle"></div>
+            <div class="inpStyle"></div>
+            <div class="inpStyle"></div>
+            <div class="inpStyle"></div>
+        </div>
+    </div>
+</body>
+
+</html>
