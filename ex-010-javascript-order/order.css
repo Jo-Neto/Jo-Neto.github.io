@@ -1,0 +1,71 @@
+body  {
+    background-color: rgba(211, 158, 94, 0.322);
+    padding: 0px;
+    margin: 0px;
+}
+
+section {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 500%;
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    font-size: 300%;
+    text-align: center;
+    color: black;
+}
+
+* {
+    font-family: 'Cookie', cursive;
+    font-size: xx-large;
+    color: rgb(48, 48, 48);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    border: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+fieldset>div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(250, 246, 255);
+}
+
+fieldset>div>div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px black;
+}
+
+button {
+    font-size: 250%;
+    background-color: rgb(250, 246, 255);
+    text-align: center;
+    width: 50%;
+}
+
+P:last-of-type {
+    font-weight: 600;
+    font-size: 120%;
+}
