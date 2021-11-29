@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Paku Paku Lanches</title>
+    <link rel="stylesheet" type="text/css" href="order.css">
+    <script defer src="order.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Paku Paku lanches</h1>
+    <h2>Monte seu lanche!</h2>
+    <section>
+        <form>
+            <fieldset>
+                <div>
+                    <div for="bread0">
+                        <label for="bread0">Pão Frances</label>
+                        <input type="radio" name="bread" id="bread0" value="3.00"/>
+                        <label for="bread0">R$ 3,00</label>
+                    </div>
+                    <div for="bread1">
+                        <label for="bread1">Pão Australiano</label>
+                        <input type="radio" name="bread" id="bread1" value="8.00"/>
+                        <label for="bread1">R$ 8,00</label>
+                    </div>
+                    <div for="bread2">
+                        <label for="bread2">Pão Brioche</label>
+                        <input type="radio" name="bread" id="bread2" value="6.00"/>
+                        <label for="bread2">R$ 6,00</label>
+                    </div>
+                </div>
+            </fieldset><br /><br /><br />
+            <fieldset>
+                <div>
+                    <div for="meat0">
+                        <label for="meat0">Hamburguer de Picanha</label>
+                        <input type="radio" name="meat" id="meat0" value="13.00"/>
+                        <label for="meat0">R$ 13,00</label>
+                    </div>
+                    <div for="meat1">
+                        <label for="meat1">Hamburguer de Costela</label>
+                        <input type="radio" name="meat" id="meat1" value="10.00"/>
+                        <label for="meat1">R$ 10,00</label>
+                    </div>
+                    <div for="meat2">
+                        <label for="meat2">Hamburguer Vegano</label>
+                        <input type="radio" name="meat" id="meat2" value="12.00"/>
+                        <label for="meat2">R$ 12,00</label>
+                    </div>
+                </div>
+            </fieldset><br /><br /><br />
+            <fieldset>
+                <div>
+                    <div for="veg0">
+                        <label for="veg0">Alface</label>
+                        <input type="checkbox" name="veg" id="veg0" value="1.50"/>
+                        <label for="veg0">R$ 1,50</label>
+                    </div>
+                    <div for="veg1">
+                        <label for="veg1">Tomate</label>
+                        <input type="checkbox" name="veg" id="veg1" value="1.50"/>
+                        <label for="veg1">R$ 1,50</label>
+                    </div>
+                    <div for="veg2">
+                        <label for="veg2">Sem salada</label>
+                        <input type="checkbox" name="veg" id="veg2" value="0.00"/>
+                        <label for="veg2">R$ 0,00</label>
+                    </div>
+                </div>
+            </fieldset><br /><br /><br />
+            <fieldset>
+                <div>
+                    <div for="chee0">
+                        <label for="chee0">Queijo Mussarela</label>
+                        <input type="checkbox" name="chee" id="chee0" value="3.00"/>
+                        <label for="chee0">R$ 3,00</label>
+                    </div>
+                    <div for="chee1">
+                        <label for="chee1">Queijo Prato</label>
+                        <input type="checkbox" name="chee" id="chee1" value="3.00"/>
+                        <label for="chee1">R$ 3,00</label>
+                    </div>
+                    <div for="chee2">
+                        <label for="chee2">Queijo Cheddar</label>
+                        <input type="checkbox" name="chee" id="chee2" value="5.00"/>
+                        <label for="chee2">R$ 5,00</label>
+                    </div>
+                </div>
+            </fieldset><br /><br />
+            <button type="button" onclick="InneficientUglyFunction()">Finalizar Pedido</button>
+            <br /><br />
+        </form>
+    </section>
+    <section>
+        <br />
+        <h2>Seu Pedido</h2>
+        <div id="toAdd">
+        </div>
+    </section>
+</body>
+
+</html>
