@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Your Race</title>
+    <link rel="stylesheet" type="text/css" href="race.css">
+    <script defer src="race.js"></script>
+</head>
+
+<body>
+    <div>
+        <form>
+            <div class="ind"><label for="stOne">Corrida Rapida</br>10 voltas</label></br><input id="stOne" type="radio" name="laps" value="10"></div>
+            <div class="ind"><label for="stTwo">Grande Premio</br>70 voltas</label></br><input id="stTwo" type="radio" name="laps" value="70"></div>
+            <div class="ind"><label for="stThr">Enduro</br>160 voltas</label></br><input id="stThr" type="radio" name="laps" value="160"></div>
+            <div class="ind"></br><label for="stFou">Personalizavel</label></br><input id="stFou" type="radio" name="laps"></br><input type="number" id="lapChoice"></div>
+        </form>
+    </div>
+    <div>
+        <form>
+            <div class="ind"><label for="ndOne">Carros Definidos (Padrão)</label></br><input id="ndOne" type="radio" name="rand" value="0"></br></div>
+            <div class="ind"><label for="ndTwo">Carros Totalmente Aleatórios</label></br><input id="ndTwo" type="radio" name="rand" value="1"></br></div>
+        </form>
+    </div>
+    <div>
+        <button onclick="genChoice()">Começar Corrida</button>
+    </div>
+    <div id="toAdd">
+        <p>resultado</p>
+    </div>
+</body>
+
+</html>
