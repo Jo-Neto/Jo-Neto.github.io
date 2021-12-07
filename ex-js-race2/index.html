@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Another Race</title>
+    <link rel="stylesheet" type="text/css" href="race2.css">
+    <script defer src="race2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="playAreaDiv">
+        <div class="pedro">
+            <h2>Pedro</h2>
+            <button class="pedro" onclick="doChoice('pedro', false)">Carro Aleatório</button>
+            <button class="pedro" onclick="doChoice('pedro', true)">Pool de Carros</button>
+        </div>
+        <div class="separator"></div>
+        <div class="juca">
+            <h2>Juca</h2>
+            <button class="juca" onclick="doChoice('juca', false)">Carro Aleatório</button>
+            <button class="juca" onclick="doChoice('juca', true)">Pool de Carros</button>
+        </div>
+        <div class="separator"></div>
+        <div class="edna">
+            <h2>Edna</h2>
+            <button class="edna" onclick="doChoice('edna', false)">Carro Aleatório</button>
+            <button class="edna" onclick="doChoice('edna', true)">Pool de Carros</button>
+        </div>
+    </div>
+    <div id="sepDiv">
+    </div>
+    <div id="genRaceDiv">
+        <div>
+            <label hidden for="lapsField" class="lastBtn">Voltas:</label>
+            <input hidden type="number" id="lapsField" class="lastBtn"></input>
+            <div>
+                <button hidden onclick="makeRace(10)" class="lastBtn" id="lastBtnId">10 voltas</button>
+                <button hidden onclick="makeRace(70)" class="lastBtn" id="lastBtnId">70 voltas</button>
+                <button hidden onclick="makeRace(160)" class="lastBtn" id="lastBtnId">160 voltas</button>
+            </div>
+        </div>
+        <button hidden onclick="makeRace()" class="lastBtn" id="lastBtnId">Bora Correr</button>
+        <p hidden class="lastBtn" id="winner"></p>
+    </div>
+</body>
+
+</html>
