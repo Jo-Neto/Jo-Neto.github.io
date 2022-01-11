@@ -1,0 +1,26 @@
+body {
+    padding: 5% 20% 5%;
+    background-color: azure;
+}
+
+p {
+    text-align: center;
+    font-size: 19px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 70px;
+    font-size: 250%;
+}
+
+div:last-of-type {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+button {
+    font-size: 110%;
+}
